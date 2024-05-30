@@ -1,86 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-section {
+            background-color: #008080;
+            color: white;
+            padding: 20px;
+        }
+
+        .right-section {
+            padding: 20px;
+        }
+
+        .left-section h1,
+        .left-section h4 {
+            margin: 0;
+            padding-bottom: 15px;
+        }
+
+        .contact-info,
+        .education,
+        .languages,
+        .passions {
+            padding: 10px 0;
+        }
+
+        .experience h5,
+        .education h5 {
+            margin: 0;
+        }
+
+        .experience p,
+        .education p,
+        .passions p {
+            margin: 0 0 10px 0;
+        }
+
+        .languages .progress {
+            height: 5px;
+        }
+
+        .languages .progress-bar {
+            background-color: #008080;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container my-5">
-        <div class="text-center">
-            <h1 class="font-weight-bold">Anmol Kler</h1>
-            <h5 class="text-primary">Computer Technician</h5>
+    <div class="resume row">
+        <div class="left-section col-md-4">
+            <h1>Anmol Kler</h1>
             <div class="contact-info">
-                <p>@ anmol.kler@student.kpu.ca</p>
-                <p>https://ca.linkedin.com/in/anmolkler</p>
+                <p>Computer Technician</p>
+                <p><a href="mailto:anmol.kler@student.kpu.ca" class="text-white">anmol.kler@student.kpu.ca</a></p>
+                <p><a href="https://ca.linkedin.com/in/anmolkler" class="text-white">https://ca.linkedin.com/in/anmolkler</a></p>
                 <p>Surrey</p>
             </div>
+            <h4>SUMMARY</h4>
+            <p>Dynamic and detail-oriented IT professional with over 2 years of experience in diverse technical environments. Expertise in network administration, system maintenance, and cybersecurity. Proven ability to design, implement, and manage IT infrastructure to optimize performance and support organizational objectives. Adept at troubleshooting complex issues and delivering innovative solutions to enhance operational efficiency. Strong communicator with a track record of collaborating effectively with cross-functional teams to drive successful project outcomes. Certified in [relevant certifications], demonstrating a commitment to ongoing professional development and excellence in the IT field.</p>
+            <h4>ACHIEVEMENTS</h4>
+            <ul>
+                <li>E-Commerce Website: Built a Pet Store website with PHP, HTML, and Bootstrap.</li>
+                <li>Face Recognition Software: Built a facial recognition system using raspberry pi.</li>
+                <li>Movie Ticketing System: Built a movie ticketing system using Java.</li>
+            </ul>
+            <h4>SKILLS</h4>
+            <ul>
+                <li>Microsoft Office 365</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>Networking</li>
+            </ul>
+            <h4>CERTIFICATION</h4>
+            <ul>
+                <li>CCNA I - Cisco</li>
+                <li>CCNA II - Cisco</li>
+            </ul>
         </div>
-        <div class="row">
-            <div class="col-md-8">
-                <h3 class="text-uppercase">Experience</h3>
-                <div class="mb-4">
-                    <h5>Computer Technician</h5>
-                    <p>Microserve</p>
-                    <p>05/2024 - Surrey</p>
-                    <ul>
-                        <li>Designed and built an online movie ticketing system using Java, MySQL.</li>
-                        <li>Build local area networks with routers and switches and implement Internet Protocol (IP) addressing schemes.</li>
-                        <li>Created websites by using HTML, JavaScript, and CSS.</li>
-                        <li>Build database using SQL for an online auction system.</li>
-                        <li>Created advanced excel worksheets.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Deliver Driver</h5>
-                    <p>FedEx</p>
-                    <p>12/2021 - Present | Surrey</p>
-                    <ul>
-                        <li>Handling over 100+ packages and providing thorough end user support and achieving user satisfaction by ensuring high quality customer service.</li>
-                        <li>Practice safe and secure methods to load, unload, prepare and operate delivery vehicle to avoid damages to goods.</li>
-                        <li>Verify accuracy of inventory and shipping information.</li>
-                        <li>Consistently maintain a 95% customer satisfaction rating and have maintained a 99.8% on-time delivery rating in past 12 months.</li>
-                        <li>Implemented new route plans, resulting in 9% decrease in driving time.</li>
-                    </ul>
-                </div>
-                <h3 class="text-uppercase">Education</h3>
-                <p>Bachelors of Technology</p>
-                <p>Kwantlen Polytechnic University</p>
-                <p>05/2022 - Present | Surrey</p>
-                <p>Computer Informations System</p>
-                <p>Kwantlen Polytechnic University</p>
-                <p>05/2019 - 05/2020 | Surrey</p>
-                <h3 class="text-uppercase">Languages</h3>
-                <p>English <span class="badge badge-primary">Proficient</span></p>
-                <p>Punjabi <span class="badge badge-primary">Native</span></p>
-            </div>
-            <div class="col-md-4">
-                <h3 class="text-uppercase">Summary</h3>
-                <p>Dynamic and detail-oriented IT professional with over 2 years of experience in diverse technical environments. Expertise in network administration, system maintenance, and cybersecurity. Proven ability to design, implement, and manage IT infrastructure to optimize performance and support organizational objectives. Adept at troubleshooting complex issues and delivering innovative solutions to enhance operational efficiency. Strong communicator with a track record of collaborating effectively with cross-functional teams to drive successful project outcomes. Certified in [relevant certifications], demonstrating a commitment to ongoing professional development and excellence in the IT field.</p>
-                <h3 class="text-uppercase">Achievements</h3>
+        <div class="right-section col-md-8">
+            <div class="experience">
+                <h4>EXPERIENCE</h4>
+                <h5>Computer Technician</h5>
+                <p>Microserve - 05/2024 - Surrey</p>
                 <ul>
-                    <li><strong>E-Commerce Website:</strong> Built a Pet Store website with PHP, HTML and Bootstrap.</li>
-                    <li><strong>Face Recognition Software:</strong> Built a facial recognition system using raspberry pi.</li>
-                    <li><strong>Movie Ticketing System:</strong> Built a movie ticketing system using Java.</li>
+                    <li>Designed and built an online movie ticketing system using Java, MySQL.</li>
+                    <li>Build local area networks with routers and switches and implement Internet Protocol (IP) addressing schemes.</li>
+                    <li>Created websites by using HTML, JavaScript, and CSS.</li>
+                    <li>Built databases using SQL for an online auction system.</li>
+                    <li>Created advanced excel worksheets.</li>
                 </ul>
-                <h3 class="text-uppercase">Skills</h3>
-                <p>Microsoft Office 364</p>
-                <p>Python</p>
-                <p>Java</p>
-                <p>C++</p>
-                <p>SQL</p>
-                <p>Networking</p>
-                <h3 class="text-uppercase">Certification</h3>
-                <p>CCNA I <br> Cisco</p>
-                <p>CCNA II <br> Cisco</p>
-                <h3 class="text-uppercase">Passions</h3>
+                <h5>Delivery Driver</h5>
+                <p>FedEx - 12/2021 - Present - Surrey</p>
+                <ul>
+                    <li>Handling over 100+ packages and providing thorough end user support and achieving user satisfaction by ensuring high quality customer service.</li>
+                    <li>Practice safe and secure methods to load, unload, prepare and operate delivery vehicle to avoid damages to goods.</li>
+                    <li>Verify accuracy of inventory and shipping information.</li>
+                    <li>Consistently maintain a 95% customer satisfaction rating and have maintained a 98.6% on-time delivery rating in past 12 months.</li>
+                    <li>Implemented new route plans, resulting in 9% decrease in driving time.</li>
+                </ul>
+            </div>
+            <div class="education">
+                <h4>EDUCATION</h4>
+                <h5>Bachelors of Technology</h5>
+                <p>Kwantlen Polytechnic University - 05/2022 - Present - Surrey</p>
+                <h5>Computer Informations System</h5>
+                <p>Kwantlen Polytechnic University - 05/2019 - 05/2020 - Surrey</p>
+            </div>
+            <div class="languages">
+                <h4>LANGUAGES</h4>
+                <p>English - Proficient</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <p>Punjabi - Native</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="passions">
+                <h4>PASSIONS</h4>
                 <p><strong>Software Engineering:</strong> I have great passion for software developing. I am good in Python, Java and PHP.</p>
-                <p><strong>Cybersecurity:</strong> I have a great interest in cybersecurity. Security is something that will always be a necessity for an organisation.</p>
+                <p><strong>Cybersecurity:</strong> I have a great interest in cybersecurity. Security is something that will always be a necessity for an organization.</p>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
+
 
