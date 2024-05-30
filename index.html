@@ -7,6 +7,7 @@
     <title>Resume</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #f4f4f4;
@@ -64,7 +65,39 @@
             background-color: #008080;
         }
 
+        .contact-info p {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info p i {
+            margin-right: 10px;
+        }
+
         a {
+            color: white;
+        }
+
+        .achievements,
+        .skills,
+        .certification {
+            list-style: none;
+            padding: 0;
+        }
+
+        .achievements li,
+        .skills li,
+        .certification li {
+            margin-bottom: 10px;
+        }
+
+        .achievements li::before,
+        .skills li::before,
+        .certification li::before {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 10px;
             color: white;
         }
     </style>
@@ -75,21 +108,21 @@
         <div class="left-section col-md-4">
             <h1>Anmol Kler</h1>
             <div class="contact-info">
-                <p>Computer Technician</p>
-                <p><a href="mailto:anmol.kler@student.kpu.ca" class="text-white">anmol.kler@student.kpu.ca</a></p>
-                <p><a href="https://ca.linkedin.com/in/anmolkler" class="text-white">https://ca.linkedin.com/in/anmolkler</a></p>
-                <p>Surrey</p>
+                <p><i class="fas fa-briefcase"></i>Computer Technician</p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:anmol.kler@student.kpu.ca" class="text-white">anmol.kler@student.kpu.ca</a></p>
+                <p><i class="fab fa-linkedin"></i><a href="https://ca.linkedin.com/in/anmolkler" class="text-white">https://ca.linkedin.com/in/anmolkler</a></p>
+                <p><i class="fas fa-map-marker-alt"></i>Surrey</p>
             </div>
             <h4>SUMMARY</h4>
             <p>Dynamic and detail-oriented IT professional with over 2 years of experience in diverse technical environments. Expertise in network administration, system maintenance, and cybersecurity. Proven ability to design, implement, and manage IT infrastructure to optimize performance and support organizational objectives. Adept at troubleshooting complex issues and delivering innovative solutions to enhance operational efficiency. Strong communicator with a track record of collaborating effectively with cross-functional teams to drive successful project outcomes. Certified in [relevant certifications], demonstrating a commitment to ongoing professional development and excellence in the IT field.</p>
             <h4>ACHIEVEMENTS</h4>
-            <ul>
+            <ul class="achievements">
                 <li>E-Commerce Website: Built a Pet Store website with PHP, HTML, and Bootstrap.</li>
                 <li>Face Recognition Software: Built a facial recognition system using raspberry pi.</li>
                 <li>Movie Ticketing System: Built a movie ticketing system using Java.</li>
             </ul>
             <h4>SKILLS</h4>
-            <ul>
+            <ul class="skills">
                 <li>Microsoft Office 365</li>
                 <li>Python</li>
                 <li>Java</li>
@@ -98,7 +131,7 @@
                 <li>Networking</li>
             </ul>
             <h4>CERTIFICATION</h4>
-            <ul>
+            <ul class="certification">
                 <li>CCNA I - Cisco</li>
                 <li>CCNA II - Cisco</li>
             </ul>
